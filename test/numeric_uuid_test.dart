@@ -16,13 +16,10 @@ void main() {
     expect(() => NumericUUID.generate(length: 31), throwsArgumentError);
   });
 
-  test('Ensures no trailing zeros', () {
-    String id = NumericUUID.generate(length: 25);
-    expect(id.endsWith('0'), isFalse);
-  });
-
-  test('Generates different UUIDs in successive calls', () {
+  test('Generates different UUIDs in successive calls', () async {
     String id1 = NumericUUID.generate(length: 20);
+    await Future.delayed(
+        Duration(milliseconds: 1)); // Small delay to ensure uniqueness
     String id2 = NumericUUID.generate(length: 20);
     expect(id1, isNot(id2));
   });

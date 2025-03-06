@@ -1,6 +1,6 @@
 name: numeric_uuid
 description: A simple package to generate unique numeric IDs.
-version: 1.0.0
+version: 1.0.2
 repository: https://github.com/Jeeva0604/numeric_uuid
 homepage: https://github.com/Jeeva0604/numeric_uuid
 

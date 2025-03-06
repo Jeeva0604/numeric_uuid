@@ -1,4 +1,4 @@
-## 1.0.0
+## 1.0.2
 
 * Initial release of `numeric_uuid`.
 * Generates unique numeric IDs with customizable length (10-30 digits).
